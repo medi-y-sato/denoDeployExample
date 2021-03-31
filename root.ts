@@ -4,5 +4,6 @@ import slackRequest from "./slack.ts"
 
 serve({
     "/": mainRequest,
+    "/slack": slackRequest,
     404: () => new Response("not found")
 });
